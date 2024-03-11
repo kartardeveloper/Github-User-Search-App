@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Space Mono";
+  src: url("../fonts/SpaceMono/SpaceMono-Regular.woff2") format("woff2"),
+    url("../fonts/SpaceMono/SpaceMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("../fonts/SpaceMono/SpaceMono-Bold.woff2") format("woff2"),
+    url("../fonts/SpaceMono/SpaceMono-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  --primary-bg: #141d2f;
+  --secondary-bg: #1e2a47;
+  --accent-color: #0079ff;
+  --accent-hover-color: #141d2f;
+  --heading-color: #ffffff;
+  --text-color: #ffffff;
+  --heading-color: #ffffff;
+  --theme-toggler-btn-hover: #90a4d4;
+  --error: #f74646;
+  --white: #ffffff;
+  --black: #000000;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  transition: all 0.2s linear;
+}
+
+body.light-theme {
+  --primary-bg: #f6f8ff;
+  --secondary-bg: #fefefe;
+  --heading-color: #2b3442;
+  --text-color: #4b6a9b;
+  --theme-toggler-btn-hover: #2b3442;
+}
+
+a {
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  padding: 70px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  max-width: 730px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button {
+  background-color: var(--accent-color);
+  color: var(--white);
+  padding: 10px 18px;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.button:hover {
+  background-color: var(--accent-hover-color);
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding: 50px 0;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+}

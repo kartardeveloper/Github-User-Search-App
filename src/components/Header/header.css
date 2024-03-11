@@ -1,0 +1,40 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-heading {
+  font-size: 32px;
+  line-height: 1;
+  color: var(--heading-color);
+}
+
+.theme-toggler {
+  background-color: transparent;
+  color: var(--text-color);
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 2.6px;
+  font-weight: bold;
+  transition: all 0.2s linear;
+}
+
+.theme-toggler span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-toggler:hover {
+  color: var(--theme-toggler-btn-hover);
+  fill: var(--theme-toggler-btn-hover);
+}
+
+@media screen and (max-width: 767px) {
+  .site-heading {
+    font-size: 28px;
+  }
+}

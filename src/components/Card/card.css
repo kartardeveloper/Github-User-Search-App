@@ -1,0 +1,143 @@
+.card {
+  background-color: var(--secondary-bg);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+
+.user-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-not-found span {
+  font-size: 18px;
+  color: var(--heading-color);
+}
+
+.loader {
+  display: block;
+  max-width: 40px;
+  margin: auto;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 25px;
+}
+
+.user-image__wrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-info__block {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user-realname {
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 7px;
+  color: var(--heading-color);
+}
+
+.username {
+  color: var(--accent-color);
+}
+
+.user-description {
+  line-height: 1.5;
+}
+
+.user-data {
+  background-color: var(--primary-bg);
+  border-radius: 15px;
+  padding: 15px 30px;
+  margin: 25px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.user-block__subheading {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.user-block__heading {
+  font-size: 22px;
+  color: var(--heading-color);
+}
+
+.user-links__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.user-links__list-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-links__list-item-link {
+  color: var(--link-color);
+}
+
+.link-disabled {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    padding: 25px 18px;
+  }
+
+  .user {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .user-links__list {
+    grid-template-columns: 1fr;
+  }
+
+  .user-image__wrapper {
+    width: 110px;
+    height: 110px;
+    margin: auto;
+  }
+
+  .user-info__block {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .user-data {
+    padding: 14px 20px;
+    margin: 20px 0;
+  }
+
+  .user-realname {
+    font-size: 24px;
+  }
+}
